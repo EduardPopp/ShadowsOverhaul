@@ -1,6 +1,6 @@
 Underhaul: Shadows Overhaul (compat mit Expansion)
 
-Novehicle Damage
+
 Vehicel Inventory (basically ShadowCarvanillaplus)
 eigene Karren
 evtl nen geiles Flugsystem
@@ -9,7 +9,6 @@ trader music based on radiotrader von FoXy
 
 
 Musik ändern
-Novehicle Damage -> eventuell ersetzen? 
 
 
 
@@ -21,8 +20,10 @@ Was ist fertig/ Feinpolitur
 StaminaRework 
 - eventuell auf 0.0025 setzen wenns zu viel verbraucht
 Gas Pump Refueling
-
-
+NoVehicleDamage
+- auf MP Server testen um Schaden auszuschließen
+- Überfahren testen
+- Autoattachments sind immer noch zerstörbar (eventuell shielded components reinmodden?)
 
 
 

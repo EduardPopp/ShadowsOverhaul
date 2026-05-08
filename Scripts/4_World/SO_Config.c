@@ -20,6 +20,7 @@ class SO_GasPumpSettings
 class SO_Config
 {
     int infiniteStamina = 1;
+    int noVehicleDamage = 1;
     ref SO_GasPumpSettings gasPumpRefuel = new SO_GasPumpSettings();
 
     private static ref SO_Config m_Instance;
@@ -37,6 +38,11 @@ class SO_Config
     static bool IsInfiniteStamina()
     {
         return Get().infiniteStamina == 1;
+    }
+
+    static bool IsNoVehicleDamage()
+    {
+        return Get().noVehicleDamage == 1;
     }
 
     static bool IsGasPumpEnabled()
