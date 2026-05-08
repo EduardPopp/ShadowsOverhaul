@@ -1,11 +1,34 @@
 Underhaul: Shadows Overhaul (compat mit Epansion)
-Gas Pump Refueling
+
 Novehicle Damage
 Vehicel Inventory (basically ShadowCarvanillaplus)
 eigene Karren
 evtl nen geiles Flugsystem
 trader music based on radiotrader von FoXy
-staminarebalance
+
+
 
 Musik ändern
 Novehicle Damage -> eventuell ersetzen? 
+
+
+
+
+
+
+
+
+
+StaminaRework 
+eventuell auf 0.0025 setzen wenns zu viel verbraucht
+
+Gas Pump Refueling
+
+
+
+
+Camps aufm Server
+Mod Palisaden
+
+Auto Modul Biosprit
+Biosprit(aus altem Obst auch trinkbar ^^ samagon) Apparatur
