@@ -116,10 +116,6 @@ class SO_ActionRefuelAtPump : ActionContinuousBase
         float fuel = SO_GasPumpManager.Get().GetFuel(pump.GetPosition());
         s_CachedFuel = fuel;
 
-        // Säule leer und Tank voll → nichts zu tun
-        if (fuel <= 0.1 && vehicle.GetFluidFraction(CarFluid.FUEL) >= 0.98)
-            return false;
-
         // Säule leer → Prüfen anbieten (auch wenn schon geprüft, Info aktualisieren)
         if (fuel <= 0.1)
         {
@@ -128,7 +124,7 @@ class SO_ActionRefuelAtPump : ActionContinuousBase
         }
 
         // Tank voll → kein Tanken nötig
-        if (vehicle.GetFluidFraction(CarFluid.FUEL) >= 0.98)
+        if (!s_IsCheckMode && vehicle.GetFluidFraction(CarFluid.FUEL) >= 0.98)
             return false;
 
         return true;

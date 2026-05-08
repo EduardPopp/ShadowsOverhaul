@@ -1,4 +1,4 @@
-Underhaul: Shadows Overhaul (compat mit Epansion)
+Underhaul: Shadows Overhaul (compat mit Expansion)
 
 Novehicle Damage
 Vehicel Inventory (basically ShadowCarvanillaplus)
@@ -17,18 +17,19 @@ Novehicle Damage -> eventuell ersetzen?
 
 
 
-
-
+Was ist fertig/ Feinpolitur
 StaminaRework 
-eventuell auf 0.0025 setzen wenns zu viel verbraucht
-
+- eventuell auf 0.0025 setzen wenns zu viel verbraucht
 Gas Pump Refueling
 
 
 
 
-Camps aufm Server
-Mod Palisaden
 
+Todo
 Auto Modul Biosprit
 Biosprit(aus altem Obst auch trinkbar ^^ samagon) Apparatur
+
+
+Camps aufm Server
+Mod Palisaden
