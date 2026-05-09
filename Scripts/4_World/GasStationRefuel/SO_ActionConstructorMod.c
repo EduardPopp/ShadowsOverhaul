@@ -9,6 +9,7 @@ modded class ActionConstructor
         super.RegisterActions(actions);
 
         actions.Insert(SO_ActionRefuelAtPump);
-        Print("[Shadows_Overhaul] Refuel Action registriert!");
+        actions.Insert(SO_ActionCarFlip);
+        Print("[Shadows_Overhaul] Actions registriert!");
     }
 }

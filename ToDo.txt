@@ -24,12 +24,23 @@ NoVehicleDamage
 - auf MP Server testen um Schaden auszuschließen
 - Überfahren testen
 - Autoattachments sind immer noch zerstörbar (eventuell shielded components reinmodden?)
+Carinventory
+Kofferraum bleibt nur accessible wenn offen
+Waffenreload muss vor dem Einsteigen geschehen, sorgt für mehr Realism
+
+Vehicleflip
+
+Vanillakarren überarbeiten
+
 
 
 
 Todo
 Auto Modul Biosprit
 Biosprit(aus altem Obst auch trinkbar ^^ samagon) Apparatur
+Kartoffeln/Kürbisse
+spielermarker auf geflaggte betrüger
+
 
 
 Camps aufm Server

@@ -17,12 +17,19 @@ class SO_GasPumpSettings
     float resetIntervalHours  = 24.0;
 }
 
+class SO_CarFlipSettings
+{
+    int   enabled             = 1;
+    float flipTimeSeconds     = 5.0;
+}
+
 class SO_Config
 {
     int infiniteStamina = 1;
     int noVehicleDamage = 1;
     int vehicleInventory = 1;
     ref SO_GasPumpSettings gasPumpRefuel = new SO_GasPumpSettings();
+    ref SO_CarFlipSettings carFlip = new SO_CarFlipSettings();
 
     private static ref SO_Config m_Instance;
 
@@ -64,6 +71,16 @@ class SO_Config
     static SO_GasPumpSettings GetGasPumpSettings()
     {
         return Get().gasPumpRefuel;
+    }
+
+    static float GetCarFlipSeconds()
+    {
+        return Get().carFlip.flipTimeSeconds;
+    }
+
+    static bool IsCarFlipEnabled()
+    {
+        return Get().carFlip.enabled == 1;
     }
 
     private void Load()

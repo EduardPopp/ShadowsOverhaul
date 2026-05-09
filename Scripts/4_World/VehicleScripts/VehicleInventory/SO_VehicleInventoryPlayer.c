@@ -5,6 +5,7 @@
 
 modded class PlayerBase
 {
+    private int m_SOLockCount = 0;
     override bool CanManipulateInventory()
     {
         if (SO_Config.IsVehicleInventory() && GetCommand_Vehicle())
@@ -38,10 +39,15 @@ modded class PlayerBase
 
         // Print("[Shadows_Overhaul] OnCommandVehicleStart! Seat: " + GetCommand_Vehicle().GetVehicleSeat());
 
-        if (SO_Config.IsVehicleInventory() && GetInventory())
+        m_SOLockCount = 0; 
+        if (SO_Config.IsVehicleInventory() && GetInventory() && GetCommand_Vehicle())
         {
-            GetGame().GetCallQueue(CALL_CATEGORY_GAMEPLAY).CallLater(TryUnlockVehicleInventory, 500, false);
-            // if (GetCommand_Vehicle().GetVehicleSeat() != 0)
+            // GetGame().GetCallQueue(CALL_CATEGORY_GAMEPLAY).CallLater(TryUnlockVehicleInventory, 500, false);
+        
+            if (GetCommand_Vehicle().GetVehicleSeat() != 0)
+            {
+                GetGame().GetCallQueue(CALL_CATEGORY_GAMEPLAY).CallLater(TryUnlockVehicleInventory, 500, false);
+            }
             //     GetInventory().UnlockInventory(LOCK_FROM_SCRIPT);
                 // Print("[Shadows_Overhaul] Inventar entsperrt!");
                 // Print("[Shadows_Overhaul] IsInventoryLocked: " + GetInventory().IsInventoryLocked());
@@ -58,9 +64,13 @@ modded class PlayerBase
         if (GetCommand_Vehicle().GetVehicleSeat() == 0)
             return;
 
+        m_SOLockCount = 0;
         while (GetInventory().IsInventoryLocked())
             {
                 GetInventory().UnlockInventory(LOCK_FROM_SCRIPT);
+                m_SOLockCount++;
+                if (m_SOLockCount > 10)
+                    break;
             }
         // GetInventory().UnlockInventory(LOCK_FROM_SCRIPT);
 
@@ -83,7 +93,11 @@ modded class PlayerBase
     {
         if (SO_Config.IsVehicleInventory() && GetInventory())
         {
-            GetInventory().LockInventory(LOCK_FROM_SCRIPT);
+            for (int i = 0; i < m_SOLockCount; i++)
+            {
+                GetInventory().LockInventory(LOCK_FROM_SCRIPT);
+            }
+            m_SOLockCount = 0;
         }
 
         super.OnCommandVehicleFinish();

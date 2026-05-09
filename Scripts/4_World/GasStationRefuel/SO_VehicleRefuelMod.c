@@ -7,5 +7,7 @@ modded class CarScript
         {
             AddAction(SO_ActionRefuelAtPump);
         }
+        if (SO_Config.IsCarFlipEnabled())
+            AddAction(SO_ActionCarFlip);
     }
 }
