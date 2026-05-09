@@ -37,6 +37,12 @@ class CfgMods
                 value = "";
                 files[] = { "Shadows_Overhaul/Scripts/4_World" };
             };
+
+            class missionScriptModule
+            {
+                value = "";
+                files[] = { "Shadows_Overhaul/Scripts/5_Mission" };
+            };
         };
     };
 };
