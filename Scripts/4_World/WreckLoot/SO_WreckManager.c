@@ -75,7 +75,7 @@ class SO_WreckManager
         if (FileExist(m_SavePath))
         {
             JsonFileLoader<SO_WreckStorage>.JsonLoadFile(m_SavePath, m_Storage);
-            Print("[Shadows_Overhaul] Wrack-Daten geladen: " + m_Storage.wrecks.Count().ToString() + " Wracks");
+            Print("[Shadows_Overhaul] Wreckage Data loaded: " + m_Storage.wrecks.Count().ToString() + " Wrecks");
         }
     }
 

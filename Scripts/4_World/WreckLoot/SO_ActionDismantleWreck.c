@@ -22,7 +22,7 @@ class SO_ActionDismantleWreck : ActionContinuousBase
         m_CommandUID        = DayZPlayerConstants.CMD_ACTIONMOD_CRAFTING;
         m_FullBody          = false;
         m_StanceMask        = DayZPlayerConstants.STANCEMASK_CROUCH | DayZPlayerConstants.STANCEMASK_ERECT;
-        m_Text              = "Wrack zerlegen";
+        m_Text              = "#Dismantle_00";
     }
 
     override void CreateConditionComponents()
@@ -43,7 +43,7 @@ class SO_ActionDismantleWreck : ActionContinuousBase
 
     override string GetText()
     {
-        return "Wrack zerlegen";
+        return "#Dismantle_00";
     }
 
     override bool ActionCondition(PlayerBase player, ActionTarget target, ItemBase item)
@@ -122,7 +122,6 @@ class SO_ActionDismantleWreck : ActionContinuousBase
                 spawned++;
             }
         }
-        Print("[Shadows_Overhaul] Wrack zerlegt: " + spawned.ToString() + " Items gespawnt");
     }
 
     // Sucht das nächste Autowrack in 3m Radius

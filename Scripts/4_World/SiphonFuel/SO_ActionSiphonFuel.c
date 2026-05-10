@@ -21,7 +21,7 @@ class SO_ActionSiphonFuel : ActionContinuousBase
         m_CommandUID        = DayZPlayerConstants.CMD_ACTIONMOD_CRAFTING;
         m_FullBody          = false;
         m_StanceMask        = DayZPlayerConstants.STANCEMASK_CROUCH | DayZPlayerConstants.STANCEMASK_ERECT;
-        m_Text              = "Benzin absaugen";
+        m_Text              = "#Siphoning_00";
     }
 
     override void CreateConditionComponents()
@@ -42,7 +42,7 @@ class SO_ActionSiphonFuel : ActionContinuousBase
 
     override string GetText()
     {
-        return "Benzin absaugen";
+        return "#Siphoning_00";
     }
 
     override bool ActionCondition(PlayerBase player, ActionTarget target, ItemBase item)
@@ -113,9 +113,5 @@ class SO_ActionSiphonFuel : ActionContinuousBase
         car.Leak(CarFluid.FUEL, fuelLiters);
 
         canister.AddQuantity(fuelMl);
-
-        Print("[Shadows_Overhaul] KanisterMax: " + canister.GetQuantityMax().ToString());
-        Print("[Shadows_Overhaul] KanisterAktuell: " + canister.GetQuantity().ToString());
-        Print("[Shadows_Overhaul] Siphon: " + fuelMl.ToString() + "ml abgesaugt");
     }
 }
