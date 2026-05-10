@@ -13,7 +13,6 @@ modded class PlayerBase
             // Schaden von Fahrzeug → blocken
             if (source.IsInherited(Transport))
             {
-                Print("[Shadows_Overhaul] Roadkill geblockt! Source: " + source.GetType() + " Ammo: " + ammo);
                 return;
             }
         }

@@ -3,10 +3,10 @@
  *
  *  requirePumpCheck = 1:
  *    Phase 1: "Zapfsäule prüfen" → 3s → Meldung mit Menge
- *    Phase 2: "Tanken (XL übrig)" → 12s → Auto betanken
+ *    Phase 2: "Tanken (XL übrig)" → Xs → Auto betanken
  *
  *  requirePumpCheck = 0:
- *    Direkt "Tanken (XL übrig)" → 12s → Auto betanken
+ *    Direkt "Tanken (XL übrig)" → Xs → Auto betanken
  */
 
 class SO_ActionRefuelAtPumpCB : ActionContinuousBaseCB
@@ -40,7 +40,7 @@ class SO_ActionRefuelAtPump : ActionContinuousBase
         m_CommandUID        = DayZPlayerConstants.CMD_ACTIONMOD_CRAFTING;
         m_FullBody          = false;
         m_StanceMask        = DayZPlayerConstants.STANCEMASK_CROUCH | DayZPlayerConstants.STANCEMASK_ERECT;
-        m_Text              = "Tanken";
+        m_Text              = "#Tanking_00";
     }
 
     override void CreateConditionComponents()
@@ -73,12 +73,12 @@ class SO_ActionRefuelAtPump : ActionContinuousBase
     override string GetText()
     {
         if (s_IsCheckMode)
-            return "Zapfsäule prüfen";
+            return "#Checking_00";
 
         if (s_CachedFuel <= 0.1)
-            return "Zapfsäule prüfen";
+            return "#Checking_00";
 
-        return "Tanken (" + Math.Round(s_CachedFuel).ToString() + "L übrig)";
+        return "#Tanking_00 (" + Math.Round(s_CachedFuel).ToString() + "#Leftover_00)";
     }
 
     override bool ActionCondition(PlayerBase player, ActionTarget target, ItemBase item)

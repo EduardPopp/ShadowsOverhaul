@@ -21,7 +21,7 @@ class SO_ActionCarFlip : ActionContinuousBase
         m_CommandUID        = DayZPlayerConstants.CMD_ACTIONMOD_CRAFTING;
         m_FullBody          = false;
         m_StanceMask        = DayZPlayerConstants.STANCEMASK_CROUCH | DayZPlayerConstants.STANCEMASK_ERECT;
-        m_Text              = "Fahrzeug aufrichten";
+        m_Text              = "#Flip_00";
     }
 
     override void CreateConditionComponents()
@@ -42,7 +42,7 @@ class SO_ActionCarFlip : ActionContinuousBase
 
     override string GetText()
     {
-        return "Fahrzeug aufrichten";
+        return "#Flip_00";
     }
 
     override bool ActionCondition(PlayerBase player, ActionTarget target, ItemBase item)
@@ -89,7 +89,9 @@ class SO_ActionCarFlip : ActionContinuousBase
         car.SetPosition(pos);
         car.SetOrientation(ori);
 
-        Print("[Shadows_Overhaul] Fahrzeug aufgerichtet: " + car.GetType());
+        dBodySetAngularVelocity(car, "0 0 0");
+        dBodySetLinearVelocity(car, "0 0 0");
+        dBodyActive(car, ActiveState.ACTIVE);
     }
 
     // Prüft ob das Fahrzeug auf der Seite oder dem Dach liegt

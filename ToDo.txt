@@ -1,7 +1,7 @@
 Underhaul: Shadows Overhaul (compat mit Expansion)
 
 
-Vehicel Inventory (basically ShadowCarvanillaplus)
+
 eigene Karren
 evtl nen geiles Flugsystem
 trader music based on radiotrader von FoXy
@@ -12,34 +12,38 @@ Musik ändern
 
 
 
+########Features vom Overhaul:########
+- StaminaRebalanced
+- GasStationRefuel
+- VehicleInvincibility
+- FlipCars
+- ShadowVanillaCars
 
 
+########Feinpolitur########
 
-
-Was ist fertig/ Feinpolitur
-StaminaRework 
+##StaminaRework 
 - eventuell auf 0.0025 setzen wenns zu viel verbraucht
-Gas Pump Refueling
-NoVehicleDamage
+##NoVehicleDamage
 - auf MP Server testen um Schaden auszuschließen
 - Überfahren testen
 - Autoattachments sind immer noch zerstörbar (eventuell shielded components reinmodden?)
-Carinventory
-Kofferraum bleibt nur accessible wenn offen
-Waffenreload muss vor dem Einsteigen geschehen, sorgt für mehr Realism
+##Carinventory
+- Kofferraum bleibt nur accessible wenn offen
+- Waffenreload muss vor dem Einsteigen geschehen, sorgt für mehr Realism
 
-Vehicleflip
-
-Vanillakarren überarbeiten
+languagecore
 
 
 
 
 Todo
+Vanillakarren überarbeiten
 Auto Modul Biosprit
 Biosprit(aus altem Obst auch trinkbar ^^ samagon) Apparatur
 Kartoffeln/Kürbisse
 spielermarker auf geflaggte betrüger
+siphoning von Wracks/ generell zerlegung
 
 
 

@@ -90,12 +90,12 @@ class SO_Config
         if (FileExist(path))
         {
             JsonFileLoader<SO_Config>.JsonLoadFile(path, this);
-            Print("[Shadows_Overhaul] Config geladen.");
+            Print("[Shadows_Overhaul] Config loaded.");
         }
         else
         {
             Save();
-            Print("[Shadows_Overhaul] Config erstellt mit Defaults.");
+            Print("[Shadows_Overhaul] Defult Config created.");
         }
     }
 

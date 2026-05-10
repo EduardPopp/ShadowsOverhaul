@@ -38,8 +38,6 @@ modded class ActionFillBottleBase
         m_SOAtPump = true;
         m_SOPumpPos = pump.GetPosition();
         m_SOStartQuantity = action_data.m_MainItem.GetQuantity();
-
-        Print("[Shadows_Overhaul] Kanister-Füllung gestartet. Start: " + m_SOStartQuantity.ToString() + "ml");
     }
 
     override bool ActionConditionContinue(ActionData action_data)
@@ -52,10 +50,7 @@ modded class ActionFillBottleBase
         if (m_SOAtPump)
         {
             if (!SO_GasPumpManager.Get().HasFuel(m_SOPumpPos))
-            {
-                Print("[Shadows_Overhaul] Zapfsäule leer - Füllung gestoppt");
                 return false;
-            }
 
             // Prüfe ob bereits mehr getankt als verfügbar
             float currentQty = action_data.m_MainItem.GetQuantity();
@@ -64,10 +59,7 @@ modded class ActionFillBottleBase
             float available = SO_GasPumpManager.Get().GetFuel(m_SOPumpPos);
 
             if (filledLiters >= available)
-            {
-                Print("[Shadows_Overhaul] Pumpe hat nicht mehr genug - Füllung gestoppt");
                 return false;
-            }
         }
 
         return true;
@@ -92,10 +84,9 @@ modded class ActionFillBottleBase
                 {
                     float excess = totalFilledLiters - consumed;
                     action_data.m_MainItem.AddQuantity(-excess);
-                    Print("[Shadows_Overhaul] Korrektur: " + excess.ToString() + "ml zurückgenommen");
                 }
 
-                Print("[Shadows_Overhaul] Kanister gefüllt: +" + consumed.ToString() + "ml vom Pool");
+                Print("[Shadows_Overhaul] Canister filled: +" + consumed.ToString() + "ml from pool.");
             }
         }
 

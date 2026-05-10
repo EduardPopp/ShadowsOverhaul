@@ -73,8 +73,6 @@ modded class PlayerBase
                     break;
             }
         // GetInventory().UnlockInventory(LOCK_FROM_SCRIPT);
-
-        Print("[Shadows_Overhaul] Delayed Unlock. IsLocked: " + GetInventory().IsInventoryLocked());
     }
 
     

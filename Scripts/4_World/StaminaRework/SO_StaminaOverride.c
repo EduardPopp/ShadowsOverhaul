@@ -11,7 +11,6 @@ modded class StaminaHandler
     void StaminaHandler(PlayerBase player)
     {
         m_SOInfinite = SO_Config.IsInfiniteStamina();
-        Print("[Shadows_Overhaul] Infinite Stamina: " + m_SOInfinite.ToString());
     }
 
     override void DepleteStaminaEx(EStaminaModifiers modifier, float dT = -1, float coef = 1.0)

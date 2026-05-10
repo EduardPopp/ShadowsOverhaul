@@ -10,6 +10,6 @@ modded class ActionConstructor
 
         actions.Insert(SO_ActionRefuelAtPump);
         actions.Insert(SO_ActionCarFlip);
-        Print("[Shadows_Overhaul] Actions registriert!");
+        Print("[Shadows_Overhaul] Actions registered!");
     }
 }
