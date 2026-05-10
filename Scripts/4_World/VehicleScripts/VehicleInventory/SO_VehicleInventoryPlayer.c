@@ -100,4 +100,16 @@ modded class PlayerBase
 
         super.OnCommandVehicleFinish();
     }
+
+
+    override void SetActions()
+    {
+        super.SetActions();
+
+        if (SO_Config.IsWreckDismantleEnabled())
+            AddAction(SO_ActionDismantleWreck);
+
+        if (SO_Config.IsSiphonEnabled())
+            AddAction(SO_ActionSiphonFuel);
+    }
 }

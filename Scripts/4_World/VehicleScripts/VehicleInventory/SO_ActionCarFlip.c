@@ -76,22 +76,18 @@ class SO_ActionCarFlip : ActionContinuousBase
             return;
 
         // Auto aufrichten
-        vector pos = car.GetPosition();
         vector ori = car.GetOrientation();
-
-        // Leicht anheben damit es nicht im Boden steckt
-        pos[1] = pos[1] + 0.25;
 
         // Rotation zurücksetzen (nur Yaw behalten, Pitch und Roll auf 0)
         ori[1] = 0;  // Pitch
         ori[2] = 0;  // Roll
-
-        car.SetPosition(pos);
         car.SetOrientation(ori);
 
-        dBodySetAngularVelocity(car, "0 0 0");
-        dBodySetLinearVelocity(car, "0 0 0");
-        dBodyActive(car, ActiveState.ACTIVE);
+        vector pos = car.GetPosition();
+        pos[1] = GetGame().SurfaceY(pos[0], pos[2]) + 0.10;
+        
+        car.SetPosition(pos);
+        car.PlaceOnSurface();
     }
 
     // Prüft ob das Fahrzeug auf der Seite oder dem Dach liegt

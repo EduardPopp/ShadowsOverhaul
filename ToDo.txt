@@ -15,9 +15,10 @@ Musik ändern
 ########Features vom Overhaul:########
 - StaminaRebalanced
 - GasStationRefuel
+- SiphonFuel
 - VehicleInvincibility
 - FlipCars
-- ShadowVanillaCars
+- WreckLooting
 
 
 ########Feinpolitur########
@@ -31,19 +32,20 @@ Musik ändern
 ##Carinventory
 - Kofferraum bleibt nur accessible wenn offen
 - Waffenreload muss vor dem Einsteigen geschehen, sorgt für mehr Realism
-
+##WreckLooting
+- Items hinzufügen
 languagecore
 
 
 
 
 Todo
-Vanillakarren überarbeiten
+
 Auto Modul Biosprit
 Biosprit(aus altem Obst auch trinkbar ^^ samagon) Apparatur
 Kartoffeln/Kürbisse
 spielermarker auf geflaggte betrüger
-siphoning von Wracks/ generell zerlegung
+ShadowCars (inclusive Vanilla reMechanic)
 
 
 
