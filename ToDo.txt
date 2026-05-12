@@ -32,6 +32,7 @@ Musik ändern
 ##Carinventory
 - Kofferraum bleibt nur accessible wenn offen
 - Waffenreload muss vor dem Einsteigen geschehen, sorgt für mehr Realism
+- Ignoriere gefüllte Behälter und packe trotzdem in kofferraum
 ##WreckLooting
 - Items hinzufügen
 languagecore
@@ -40,19 +41,87 @@ languagecore
 
 
 Todo
+-Garagenmod mit Parkstation
+Flugsystem
+Mopeds
+SO_Mainboard - retexture
 
 
-Biosprit(aus altem Obst auch trinkbar ^^ samagon) Apparatur
+Modelle: 
+BioFuelRaffinery - Modell fertig - Textur fertig - 
+BioFuelCarburetorModule - Nickel-cadmium Battery retex
+SO_Decoction - Brakefluid retex
+
+
+Done:
+SO_Hoses - Modell fertig - Textur fertig - Code fertig
+SO_Tubes - Hydraulic Hoses reuse
+StaleOil - Motor Oil retex
+SO_ElectricalComponents - Electrical wire reuse
+SO_BioFuelCanister - Piston Engine Oil reuse
+
+
+
+Biosprit(aus altem Obst auch trinkbar ^^ samagon) Apparatur 
 Kartoffeln/Kürbisse
 spielermarker auf geflaggte betrüger
 ShadowCars (inclusive Vanilla reMechanic)
 
 BioFuelCarburetorModule (BFCM) Recipe (0.1% chance WreckLooting)
-Tubes x 10 (WreckLooting)
+SO_Tubes x 10 (WreckLooting, Looting)
+SO_StaleOil x 20 (Wrecklooting, Looting)
 Metalwire x 15 (WreckLooting, Looting)
-Mainboard x 1 (Bunker, 50kk Rubel Trader)
 MetalSheet x 5 (WreckLooting, Looting)
-Hoses x 2 (WreckLooting)
+SO_Hose x 2 (WreckLooting)
+Glowplug x4 (Looting)
+SO_ElectricalComponents x 10 (Wrecklooting)
+Alternator Belt x2 (WreckLooting)
+Funkrucksack x 1
+
+attachment.
+SO_Mainboard x 1 (Bunker(chance), 50kk Rubel Trader)
+Militarybattery x 2
+
+
+
+Sudflasche (Brakefluid (5L behälter, SUd draufgekritzelt textur))
+inhalt 5L
+SO_StaleOil (retexture von Brakefluid)
+
+insgesamt dauer 15 minuten für 20L kanister (json config)
+15 minuten (json config) für 1x Sud
+
+
+
+BioFuelRaffinery Werkbank Static(Basar, je Siedlung 1x = 6 stück)
+
+
+
+Herstellung Biodiesel
+
+1x Sud Rezept - Pot überall kochbar
+Reis x 1
+Salzstangen x 1
+unknown food can/Cat food can x 1
+Water
+
+1x Biofuel Rezept:
+Sud x 5
+Gemüse/Obst x 5
+Vodka/Gasoline/SO_StaleOil x 3
+Fertilizer/Lime x 1
+Fat x 5
+
+Attachments. 
+Gasbrenner+Flaschen
+3 Fässer (Eins für siehe: Biofuel Rezept, alle Items, Kanister der befüllt wird über zeit, eins für Kühlung)
+Pot
+
+
+
+
 
 Camps aufm Server
 Mod Palisaden
+
+Flaggen als Collectible

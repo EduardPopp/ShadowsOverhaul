@@ -150,7 +150,7 @@ class SO_Config
         {
             InitDefaultLootTable();
             Save();
-            Print("[Shadows_Overhaul] Defult Config created.");
+            Print("[Shadows_Overhaul] Default Config created.");
         }
 
         if (wreckDismantle.lootTable.Count() == 0)
@@ -162,13 +162,14 @@ class SO_Config
     {
         //AddLoot("itemname", chance, minQty, maxQty)
         wreckDismantle.lootTable.Clear();
-        AddLoot("MetalWire", 0.6, 1, 3);
-        AddLoot("MetalSheet", 0.6, 1, 2);
+        AddLoot("MetalWire", 0.3, 1, 3);
+        AddLoot("MetalSheet", 0.3, 1, 2);
         AddLoot("SparkPlug", 0.1, 1, 1);
         AddLoot("HeadlightH7", 0.1, 1, 2);
         // Add materials for Biofueladdon
         AddLoot("StaleOil", 0.1, 1, 1);
         AddLoot("Tubes", 0.2, 1, 3);
+        AddLoot("SO_Hose", 0.3, 1, 1);
         // very small chance to get the complete assembled module: BioFuelCarburetorModule
         AddLoot("BFCM", 0.001, 1, 3);
 
