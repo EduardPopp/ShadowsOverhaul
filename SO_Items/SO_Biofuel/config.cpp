@@ -31,7 +31,7 @@ class CfgVehicles
 		varQuantityMax = 20000;
 		itemSize[] = {4, 4};
         isMeleeWeapon = 1;
-        hiddenSelections[] = {"Zbytek"};
+        hiddenSelections[] = {"zbytek"};
 
         class DamageSystem {
 			class GlobalHealth {
@@ -65,8 +65,8 @@ class CfgVehicles
         scope = 2;
         displayName = "#SO_BioFuel_00";
         descriptionShort= "#SO_BioFuel_01";
-        hiddenSelectionTextures[] = {"\Shadows_Overhaul\SO_Items\SO_BioFuel\data\air_oil_bottle_piston_co.paa"};
-        hiddenSelectionMaterials[] = {"\Shadows_Overhaul\SO_Items\SO_BioFuel\data\air_oil_bottle_piston.rvmat"};
+        hiddenSelectionsTextures[] = {"\Shadows_Overhaul\SO_Items\SO_BioFuel\data\air_oil_bottle_piston_co.paa"};
+        hiddenSelectionsMaterials[] = {"\Shadows_Overhaul\SO_Items\SO_BioFuel\data\air_oil_bottle_piston.rvmat"};
     };
 };
 class CfgSlots

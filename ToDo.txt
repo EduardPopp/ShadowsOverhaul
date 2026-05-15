@@ -40,6 +40,13 @@ languagecore
 
 
 
+
+SO_Mainboard: ist unsichtbar ?
+SO_Brew auch
+SO_BFCM auch
+
+
+
 Todo
 -Garagenmod mit Parkstation
 Flugsystem
@@ -49,8 +56,6 @@ SO_Mainboard - retexture
 
 Modelle: 
 BioFuelRaffinery - Modell fertig - Textur fertig - 
-BioFuelCarburetorModule - Nickel-cadmium Battery retex
-SO_Decoction - Brakefluid retex
 
 
 Done:
@@ -59,6 +64,8 @@ SO_Tubes - Hydraulic Hoses reuse
 StaleOil - Motor Oil retex
 SO_ElectricalComponents - Electrical wire reuse
 SO_BioFuelCanister - Piston Engine Oil reuse
+BioFuelCarburetorModule - Nickel-cadmium Battery retex
+SO_Brew - Brakefluid retex
 
 
 
@@ -80,13 +87,13 @@ Funkrucksack x 1
 
 attachment.
 SO_Mainboard x 1 (Bunker(chance), 50kk Rubel Trader)
-Militarybattery x 2
+9V Battery
+Gasmaskenfilter
 
 
 
 Sudflasche (Brakefluid (5L behälter, SUd draufgekritzelt textur))
 inhalt 5L
-SO_StaleOil (retexture von Brakefluid)
 
 insgesamt dauer 15 minuten für 20L kanister (json config)
 15 minuten (json config) für 1x Sud
@@ -114,8 +121,9 @@ Fat x 5
 
 Attachments. 
 Gasbrenner+Flaschen
-3 Fässer (Eins für siehe: Biofuel Rezept, alle Items, Kanister der befüllt wird über zeit, eins für Kühlung)
+2 Fässer (Eins für siehe: Biofuel Rezept, alle Items, Kanister der befüllt wird über zeit, eins für Kühlung)
 Pot
+1x BioFuel Canister
 
 
 

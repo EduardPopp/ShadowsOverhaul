@@ -22,19 +22,31 @@ class CfgVehicles
         displayName = "Mainboard";
         descriptionShort = "Baseclass do not Spawn";
         model = "\Shadows_Overhaul\SO_Items\SO_Mainboard\data\tire_repair_kit.p3d";
-        weight = 2000;
-        inventorySlot[] = {"Mainboard"};
+        weight = 500;
+        inventorySlot[] = {"SOMainboard"};
 		itemSize[] = {2, 2};
+        rotationFlags = 17;
         isMeleeWeapon = 1;
-        hiddenSelections[] = {"Zbytek"};
+        hiddenSelections[] = {"zbytek"};
 
-        class DamageSystem {
-			class GlobalHealth {
-				class Health {
-					hitpoints = 100000;
-				};
-			};
-		};
+        class DamageSystem
+        {
+            class GlobalHealth
+            {
+                class Health
+                {
+                    hitpoints = 100;
+                    healthLevels[] =
+                    {
+                        {1.0, {}},
+                        {0.7, {}},
+                        {0.5, {}},
+                        {0.3, {}},
+                        {0.0, {}}
+                    };
+                };
+            };
+        };
 
         class MeleeModes {
 			class Default {
@@ -60,8 +72,8 @@ class CfgVehicles
         scope = 2;
         displayName = "#SO_Mainboard_00";
         descriptionShort= "#SO_Mainboard_01";
-        hiddenSelectionTextures[] = {"\Shadows_Overhaul\SO_Items\SO_ElectricalComponents\data\tire_repair_kit_co.paa"};
-        hiddenSelectionMaterials[] = {"\Shadows_Overhaul\SO_Items\SO_ElectricalComponents\data\tire_repair_kit.rvmat"};
+        hiddenSelectionsTextures[] = {"\Shadows_Overhaul\SO_Items\SO_Mainboard\data\tire_repair_kit_co.paa"};
+        hiddenSelectionsMaterials[] = {"\Shadows_Overhaul\SO_Items\SO_Mainboard\data\tire_repair_kit.rvmat"};
     };
 };
 class CfgSlots
