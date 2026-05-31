@@ -18,3 +18,12 @@ An overhaul mod for DayZ focusing on immersion, technical optimization, and uniq
 ## 📄 License
 This project is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA 4.0). See the `LICENSE.md` file for details.
 
+## Screenshots
+# Armorpaint Textured Mesh
+![Biofuel Refinery Preview](images/AP_1.png)
+![Biofuel Refinery Preview](images/AP_2.png)
+
+# LOD 1 2 3
+![Biofuel Refinery Preview](images/LOD_1_WF.png)
+![Biofuel Refinery Preview](images/LOD_2_WF.png)
+![Biofuel Refinery Preview](images/LOD_3_WF.png)
