@@ -1,0 +1,97 @@
+{
+    "infiniteStamina": 1,
+    "noVehicleDamage": 1,
+    "vehicleInventory": 1,
+    "gasPumpRefuel": {
+        "enabled": 1,
+        "requirePumpCheck": 1,
+        "pumpCheckSeconds": 3.0,
+        "vehicleSearchRadius": 5.0,
+        "refuelTimeSeconds": 12.0,
+        "fuelPerSecond": 5.0,
+        "minFuelLiters": 200.0,
+        "maxFuelLiters": 500.0,
+        "resetIntervalHours": 24.0
+    },
+    "carFlip": {
+        "enabled": 1,
+        "flipTimeSeconds": 5.0
+    },
+    "siphonFuel": {
+        "enabled": 1,
+        "siphonTimeSeconds": 10.0,
+        "fuelPerAction": 5000.0
+    },
+    "wreckDismantle": {
+        "enabled": 1,
+        "dismantleTimeSeconds": 15.0,
+        "maxLootPerWreck": 3,
+        "resetIntervalHours": 48.0,
+        "lootTable": [
+            {
+                "item": "MetalWire",
+                "chance": 0.25,
+                "minQty": 1,
+                "maxQty": 3
+            },
+            {
+                "item": "MetalSheet",
+                "chance": 0.4000000059604645,
+                "minQty": 1,
+                "maxQty": 2
+            },
+            {
+                "item": "SparkPlug",
+                "chance": 0.10000000149011612,
+                "minQty": 1,
+                "maxQty": 1
+            },
+            {
+                "item": "HeadlightH7",
+                "chance": 0.10000000149011612,
+                "minQty": 1,
+                "maxQty": 2
+            },
+            {
+                "item": "SO_StaleOil",
+                "chance": 0.10000000149011612,
+                "minQty": 1,
+                "maxQty": 1
+            },
+            {
+                "item": "SO_Tubes",
+                "chance": 0.20000000298023225,
+                "minQty": 1,
+                "maxQty": 3
+            },
+            {
+                "item": "SO_Hose",
+                "chance": 0.30000001192092898,
+                "minQty": 1,
+                "maxQty": 1
+            },
+            {
+                "item": "SO_ElectricalComponents",
+                "chance": 0.30000001192092898,
+                "minQty": 1,
+                "maxQty": 3
+            },
+            {
+                "item": "SO_BFCM",
+                "chance": 0.0010000000474974514,
+                "minQty": 1,
+                "maxQty": 1
+            }
+        ]
+    },
+    "bioRefinery": {
+        "enabled": 1,
+        "craftingDuration": 900.0,
+        "resultAmount": 1,
+        "reqBrew": 5,
+        "reqProduce": 5,
+        "reqSolvent": 3,
+        "reqCatalyst": 1,
+        "reqFat": 5
+    }
+}
