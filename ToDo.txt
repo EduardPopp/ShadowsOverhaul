@@ -55,7 +55,6 @@ SO_Mainboard - retexture
 
 
 Modelle: 
-BioFuelRaffinery - Modell fertig - Textur fertig - 
 
 
 Done:
@@ -66,6 +65,9 @@ SO_ElectricalComponents - Electrical wire reuse
 SO_BioFuelCanister - Piston Engine Oil reuse
 BioFuelCarburetorModule - Nickel-cadmium Battery retex
 SO_Brew - Brakefluid retex
+BioFuelRaffinery - Modell fertig - Textur fertig - 
+
+´
 
 
 

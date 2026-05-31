@@ -48,6 +48,18 @@ class SO_WreckSettings
     ref array<ref SO_WreckLootEntry> lootTable = new array<ref SO_WreckLootEntry>();
 }
 
+class SO_BFRSettings
+{
+    int   enabled = 1; // only turn to 0 if you are not going to use or if Modpage states it.
+    float craftingDuration = 900.0; // Craftingduration in Seconds
+    int resultAmount = 1; //Amount of Item SO_BioFuel for one craft
+    int reqBrew = 5; // Amount of SO_Brew
+    int reqProduce = 5; // Amount of different vegetables/fruits
+    int reqSolvent = 3; // Amount of SO_StaleOil, Vodka or Gasoline
+    int reqCatalyst = 1; // Amount of GardenLime or Fertilizer
+    int reqFat = 5; // Amount of Animal Fat
+}
+
 
 // Config Class def
 class SO_Config
@@ -59,7 +71,7 @@ class SO_Config
     ref SO_CarFlipSettings carFlip = new SO_CarFlipSettings();
     ref SO_SiphonSettings  siphonFuel = new SO_SiphonSettings();
     ref SO_WreckSettings   wreckDismantle = new SO_WreckSettings();
-    
+    ref SO_BFRSettings bioRefinery = new SO_BFRSettings();
     
     private static ref SO_Config m_Instance;
 
@@ -129,6 +141,17 @@ class SO_Config
     {
         return Get().wreckDismantle.enabled == 1;
     }
+
+    static bool IsBFREnabled()
+    {
+        return Get().bioRefinery.enabled == 1;
+    }
+
+    static SO_BFRSettings GetBFRSettings()
+    {
+        return Get().bioRefinery;
+    }
+
 
     static SO_WreckSettings GetWreckSettings()
     {
