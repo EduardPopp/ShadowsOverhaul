@@ -9,7 +9,7 @@ An overhaul mod for DayZ focusing on immersion, technical optimization, and uniq
 
 ## 🛠️ Tech Stack & Tools
 * **3D Modeling & Texturing:** Blender (Mesh Creation and Optimization, UV Unwrapping), ArmorPaint (PBR Texturing)
-* **Game Engine Pipeline:** DayZ Workbench, Object Builder, P3D Format Execution
+* **Game Engine Pipeline:** VS Code, DayZ Workbench, Object Builder, P3D Format Execution
 * **Configuration:** The config-example.json is the default generated Config file by this Mod and allows to de-/activate every Module for maximum customisation
 
 ## 📦 Repository Structure
@@ -20,10 +20,12 @@ This project is licensed under the Creative Commons Attribution-NonCommercial-Sh
 
 ## Screenshots
 # Armorpaint Textured Mesh
-![Biofuel Refinery Preview](images/AP_1.png)
-![Biofuel Refinery Preview](images/AP_2.png)
+![Biofuel Refinery Preview](images/AP_1.PNG)
+![Biofuel Refinery Preview](images/AP_2.PNG)
 
-# LOD 1 2 3
-![Biofuel Refinery Preview](images/LOD_1_WF.png)
-![Biofuel Refinery Preview](images/LOD_2_WF.png)
-![Biofuel Refinery Preview](images/LOD_3_WF.png)
+# LOD 1
+![Biofuel Refinery Preview](images/LOD_1_WF.PNG)
+# LOD 2
+![Biofuel Refinery Preview](images/LOD_2_WF.PNG)
+# LOD 3
+![Biofuel Refinery Preview](images/LOD_3_WF.PNG)
