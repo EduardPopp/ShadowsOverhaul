@@ -12,7 +12,7 @@ An overhaul mod for DayZ focusing on immersion, technical optimization, and uniq
 * **3D Modeling & Texturing:** Blender (Mesh Creation and Optimization, UV Unwrapping), ArmorPaint (PBR Texturing)
 * **Game Engine Pipeline:** VS Code, DayZ Workbench, Object Builder, P3D Format Execution
 * **Configuration:** The config-example.json is the default generated Config file by this Mod and allows to de-/activate every Module for maximum customisation
-* **Scripting: Enforce Script (DayZ’s C-like scripting language). Script files use the .c extension, which is why GitHub’s language stats show them as C/C++.
+* **Scripting:** Enforce Script (DayZ’s C-like scripting language). Script files use the .c extension, which is why GitHub’s language stats show them as C/C++.
 
 ## 📦 Repository Structure
 * This Repository is directly structured as required by the Addon Builder to allow it to be packed successfully in an encrypted .pbo file
